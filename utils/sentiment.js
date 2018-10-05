@@ -12,7 +12,8 @@ const singleDetect = (textContent) => {
   return comp.detectSentiment({
     LanguageCode: 'en',
     Text: textContent,
-  }).promise();
+  }).promise()
+  .then(data => data.ResultList);
 };
 
 const batchDetect = (textArr = []) => {
@@ -23,7 +24,7 @@ const batchDetect = (textArr = []) => {
   return comp.batchDetectSentiment({
     LanguageCode: 'en',
     TextList: textArr,
-  }).promise();
+  }).promise().then(data => data.ResultList);
 }
 
 module.exports = {
