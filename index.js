@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 
 const getHomepageProps = require('./utils/getHomepageProps');
 const buildArticleText = require('./utils/buildArticleText');
-const {batchDetect, singleDetect } = require('./utils/sentiment')
+const { batchDetect, singleDetect } = require('./utils/sentiment')
 
 async function getSentimentByTitle() {
   const articleProps = await getHomepageProps();

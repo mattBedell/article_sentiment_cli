@@ -12,6 +12,7 @@ module.exports = async function(articleUrl) {
   return paragraphText.reduce((articleText, pElement) => {
     // keep text under AMZN limit of 5000
     // TODO: better size detection
+    // https://stackoverflow.com/a/27377098
     if (Buffer.byteLength(articleText, 'utf8') >= 4500) {
       return articleText;
     }
