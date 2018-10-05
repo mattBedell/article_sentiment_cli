@@ -13,7 +13,7 @@ const singleDetect = (textContent) => {
     LanguageCode: 'en',
     Text: textContent,
   }).promise()
-  .then(data => data.ResultList);
+  .then(data => data.SentimentScore);
 };
 
 const batchDetect = (textArr = []) => {
