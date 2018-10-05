@@ -1,0 +1,19 @@
+{
+  "name": "lifedaily-sample",
+  "version": "1.0.0",
+  "description": "Sentiment analysis of lifedaily headlines",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --no-deprecation index.js"
+  },
+  "author": "Matt Bedell",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.328.0",
+    "inquirer": "^6.2.0",
+    "jsdom": "^12.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^6.0.0"
+  }
+}
